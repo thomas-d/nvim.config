@@ -79,22 +79,6 @@ _G.packer_plugins = {
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["arshamiser.nvim"] = {
-    config = { "\27LJ\2\nÄ\2\0\0\4\0\16\0\0256\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\0016\0\4\0'\2\5\0B\0\2\0016\0\6\0006\1\4\0'\3\b\0B\1\2\0029\1\t\1=\1\a\0006\0\0\0009\0\n\0'\1\v\0=\1\t\0006\0\0\0009\0\f\0009\0\r\0'\2\14\0'\3\15\0B\0\3\1K\0\1\0004%{%v:lua.require(\"arshamiser.tabline\").draw()%}\ftabline\20nvim_set_option\bapi\28v:lua.custom_foldtext()\bopt\rfoldtext\23arshamiser.folding\20custom_foldtext\a_G\25arshamiser.feliniser\frequire\21arshamiser_light\16colorscheme\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/arshamiser.nvim",
-    url = "https://github.com/arsham/arshamiser.nvim"
-  },
-  ["arshlib.nvim"] = {
-    loaded = true,
-    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/arshlib.nvim",
-    url = "https://github.com/arsham/arshlib.nvim"
-  },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -120,11 +104,6 @@ _G.packer_plugins = {
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["feline.nvim"] = {
-    loaded = true,
-    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/feline.nvim",
-    url = "https://github.com/famiu/feline.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -135,15 +114,15 @@ _G.packer_plugins = {
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-  ["heirline.nvim"] = {
-    loaded = true,
-    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/heirline.nvim",
-    url = "https://github.com/rebelot/heirline.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -171,19 +150,31 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/thomas/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  playground = {
+    loaded = true,
+    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/thomas/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -203,10 +194,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: arshamiser.nvim
-time([[Config for arshamiser.nvim]], true)
-try_loadstring("\27LJ\2\nÄ\2\0\0\4\0\16\0\0256\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\0016\0\4\0'\2\5\0B\0\2\0016\0\6\0006\1\4\0'\3\b\0B\1\2\0029\1\t\1=\1\a\0006\0\0\0009\0\n\0'\1\v\0=\1\t\0006\0\0\0009\0\f\0009\0\r\0'\2\14\0'\3\15\0B\0\3\1K\0\1\0004%{%v:lua.require(\"arshamiser.tabline\").draw()%}\ftabline\20nvim_set_option\bapi\28v:lua.custom_foldtext()\bopt\rfoldtext\23arshamiser.folding\20custom_foldtext\a_G\25arshamiser.feliniser\frequire\21arshamiser_light\16colorscheme\bcmd\bvim\0", "config", "arshamiser.nvim")
-time([[Config for arshamiser.nvim]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -5,16 +5,14 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-
+use 'wbthomason/packer.nvim'
 use {
 	'nvim-telescope/telescope.nvim', tag = '0.1.1',
 	-- or                            , branch = '0.1.x',
 	requires = { {'nvim-lua/plenary.nvim'} }
 }
-
 use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-
+use ('nvim-treesitter/playground')
 use {
 	'VonHeikemen/lsp-zero.nvim',
 	branch = 'v1.x',
@@ -37,37 +35,15 @@ use {
 		{'rafamadriz/friendly-snippets'}, -- Optional
 	}
 }
-
 use ('theprimeagen/harpoon')
-
 use('mbbill/undotree')
-
 use('tpope/vim-fugitive')
-
-use {'akinsho/bufferline.nvim', tag="v3.*", requires= 'nvim-tree/nvim-web-devicons'}
-
 use({
-  "arsham/arshamiser.nvim",
-  requires = {
-    "arsham/arshlib.nvim",
-    "famiu/feline.nvim",
-    "rebelot/heirline.nvim",
-    "kyazdani42/nvim-web-devicons",
-  },
-  config = function()
-    -- ignore any parts you don't want to use
-    vim.cmd.colorscheme("arshamiser_light")
-    require("arshamiser.feliniser")
-    -- or:
-    -- require("arshamiser.heirliniser")
-
-    _G.custom_foldtext = require("arshamiser.folding").foldtext
-    vim.opt.foldtext = "v:lua.custom_foldtext()"
-    -- if you want to draw a tabline:
-    vim.api.nvim_set_option("tabline", [[%{%v:lua.require("arshamiser.tabline").draw()%}]])
-  end,
+    'rose-pine/neovim', 
+    as = 'rose-pine', 
+    config = function ()
+        vim.cmd('colorscheme rose-pine')
+    end
 })
-
 end)
-
 
