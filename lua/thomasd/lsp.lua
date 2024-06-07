@@ -55,6 +55,7 @@ return {
           },
         },
       },
+      sourcery = {},
     }
     -- additional tools
     vim.list_extend(ensure_installed, {
