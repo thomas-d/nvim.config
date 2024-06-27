@@ -46,6 +46,7 @@ return {
     local ensure_installed = {
       gopls = {},
       pyright = {},
+      ruff_lsp = {},
       lua_ls = {
         settings = {
           Lua = {

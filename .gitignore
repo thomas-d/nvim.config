@@ -6,3 +6,4 @@ nvim
 spell/
 lazy-lock.json
 kickstart-init.lua.bak
+.DS_Store
