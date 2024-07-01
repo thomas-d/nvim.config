@@ -46,7 +46,7 @@ return {
     local ensure_installed = {
       gopls = {},
       pyright = {},
-      ruff_lsp = {},
+      ruff = {},
       lua_ls = {
         settings = {
           Lua = {
@@ -56,7 +56,6 @@ return {
           },
         },
       },
-      sourcery = {},
     }
     -- additional tools
     vim.list_extend(ensure_installed, {
