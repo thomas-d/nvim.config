@@ -28,6 +28,8 @@ return { -- Autoformat
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         python = { 'ruff_fix', 'ruff_format' },
+        css = { 'prettier' },
+        scss = { 'prettier' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
