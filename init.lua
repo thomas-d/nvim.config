@@ -22,3 +22,5 @@ require('lazy').setup {
   require 'thomasd.various',
   { import = 'thomasd.plugins' or {} },
 }
+
+require('luasnip.loaders.from_lua').lazy_load { paths = './thomasd/snippets/*' }
