@@ -1,0 +1,1 @@
+require 'thomas.lsp.pyright'
