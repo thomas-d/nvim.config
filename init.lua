@@ -1,8 +1,6 @@
 require 'thomasd.options'
 require 'thomasd.keymaps'
 require 'thomasd.autocommands'
-require 'thomas.options'
-require 'thomas.keymaps'
 
 -- lazy plugin manager
 local lazypath = vim.fn.stdpath 'data' .. 'lazy/lazy.nvim'
